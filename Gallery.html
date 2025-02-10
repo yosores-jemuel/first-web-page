@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <title>MyFirstWebSite</title>
+</head>
+<body background="white">
+    <header>
+        <nav>
+            <div class="nav__content">
+                <div class="logo"><a href="#">𝕵𝕭𝖄</a></div>
+                <input type="checkbox" id="check" class="checkbox">
+                <label for="check" class="checkbox"><i class="fa-solid fa-bars"></i></label>
+                <ul>
+                    <li><a href="index.html"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="contact.html"><i class="ri-phone-fill"></i> Contact</a></li>
+                </ul>
+            </div>          
+        </nav>
+    </header>
+    <main>
+        <section class="project">
+            <div class="project__container">
+                <p class="section__subtitle">𝓜𝔂 𝓟𝓱𝓸𝓽𝓸𝓼</p>
+                <h4 class="section__title"><span>𝓛𝓪𝓽𝓮𝓼𝓽 𝓘𝓶𝓪𝓰𝓮</span></h4>
+                <div class="project__grid">
+                    <div class="project__card">
+                        <img src="zilong-glorious.jpg" alt="Project 1">
+                    </div>
+                    <div class="project__card">
+                        <img src="haya.jpg" alt="Project 1">
+                    </div>
+                    <div class="project__card">
+                        <img src="Granger.jpg" alt="Project 1">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script>
+    <footer class="footer">
+        <div class="footer__icons">
+            <a href="https://www.facebook.com/JEMUEELLL.yosoreS" target="_blank">
+                <i class="ri-facebook-box-fill"></i>
+            </a>
+            <a href="https://www.instagram.com/jemueelll.yosores" target="_blank">
+                <i class="ri-instagram-fill"></i>
+            </a>
+        </div>
+        <div class="footer__contact">
+            <p>You can follow my page on social media.</p>
+        </div>
+    </footer>
+</body>
+</html>
